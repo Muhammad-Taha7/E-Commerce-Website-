@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+
+
+ <div class="Hero_section h-[50rem] md:h-[65rem] lg:h-[46rem] min-w-[100%] bg-[url(/images/background.jpg)] bg-no-repeat bg-cover bg-center">
+      <!-- NavBar -->
+      <nav class="p-5 md:px-[5rem]  lg:px-[9rem] flex justify-between items-center">
+        <a href="#">
+            <img class="max-h-12 " src="/images/logo.png" alt="Logo">
+        </a>
+        <div class="links hidden md:flex gap-5 duration-300 text-[1.1rem] items-center  ">
+            <a href="#" class="hover:text-white hover:duration-300">Home</a>
+            <a href="#" class="hover:text-white hover:duration-300">Products</a>
+            <a href="#" class="hover:text-white hover:duration-300">About</a>
+            <a href="#" class="hover:text-white hover:duration-300">Contact</a>
+            <a href="#" class="hover:text-white hover:duration-300">Account</a>
+            <!-- Icon -->
+             <div class="icon  border-2 rounded-full px-2 py-1 text-[1.2rem]">
+            <i class="fa-solid fa-cart-shopping"></i>
+             </div>
+        </div>
+        <button class="text-[1.5rem] block md:hidden" onclick="HandleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+     </nav>
+      <div class="hero h-[41rem]  flex flex-col lg:flex-row md:justify-center md:items-center gap-[5.5rem] md:gap-[9rem]">
+        <div class="text h-[13rem] mt-[1rem] md:h-[20rem] md:w-[33rem]  p-5 md:p-3">
+            <h2 class="text-[2.4rem] md:mt-[13rem] lg:mt-[0rem] leading-[2.8rem] font-bold">Give Your Workout A New Style!</h2>
+            <p class="text-[1.1rem] mt-4">Success isn't always about greatness. It's about consistency. Conststant hard work gains success. Greatness will come.</p>
+            <button class="bg-amber-900 hover:bg-amber-950 hover:duration-300  cursor-pointer text-white px-6 py-2 text-center rounded-full mt-5">Explore Now <span class="ml-2"><i class="fa-solid fa-arrow-right"></i></span></button>
+         </div>
+         <div class="image">
+            <img class="h-[20rem] mt-[2rem] md:mt-[0rem] ml-[1rem] md:ml-[0rem] md:h-[32rem]" src="/images/image1.png" alt="">
+         </div>
+      </div>
+    </div>
+<!-- Photo Section -->
+    <div class="photo_section flex flex-col md:flex-row md:gap-5 justify-center items-center h-[66rem] gap-6  md:h-[30rem] w-[100%] ">
+        <div class="photo1 ">
+            <img class="h-[20rem] md:h-[15rem] lg:h-[22rem]" src="/images/category-1.jpg" alt="">
+        </div>
+        <div class="photo1 ">
+            <img class="h-[20rem] md:h-[15rem] lg:h-[22rem]" src="/images/category-2.jpg" alt="">
+        </div>
+        <div class="photo1 ">
+            <img class="h-[20rem] md:h-[15rem] lg:h-[22rem]" src="/images/category-3.jpg" alt="">
+        </div>
+    </div>
+
+
+                                                        <!-- Featured Products -->
+
+    <div class="feature_01 flex justify-center items-center w-[100%] h-[5rem] mb-[25rem] md:mb-[0rem] ">
+        <h2 class="text-[1.7rem] font-bold ">Featu<span class="pb-[0.4rem] border-b-4 border-orange-600 ">red Pro</span>ducts</h2>
+       </div>
+    
+        <div class="feature_02  h-[66rem] md:h-[45rem]  flex md:flex-wrap flex-col  md:flex-row justify-center items-center md:mt-[1rem] lg:mt-[0rem] gap-[1rem]">
+         <!-- Card 01 -->
+             <div class="card_1  h-[30rem] w-[17rem] mt-[12rem] md:mt-[0rem] ">
+    <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-1.jpg" alt="">
+    <div class="description p-2">
+    <h2 class="text-[1.1rem]">Red Printed T-Shirt</h2>
+    <div class="flex space-x-1 mt-1">
+        <!-- Filled Orange Star -->
+        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+        </svg>
+      
+        <!-- Repeat 3 more filled stars -->
+        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+        </svg>
+      
+        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+        </svg>
+      
+        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+        </svg>
+      
+        <!-- Empty Star with orange border -->
+        <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+          <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+        </svg>
+      </div>
+    </div>
+     <h3 class="text-gray-600 text-[1.1rem] pl-3">$50.00</h3>
+         </div>
+              <!-- Card 02 -->
+            <div class="card_1 h-[30rem] w-[17rem] ">
+        <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-2.jpg" alt="">
+        <div class="description p-2">
+        <h2 class="text-[1.1rem]">HRX Sports Shoes</h2>
+        <div class="flex space-x-1 mt-1">
+            <!-- Full Stars -->
+            <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+            <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+            <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+            <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+          
+            <!-- Half Star -->
+            <svg class="w-5 h-6 text-orange-500 stroke-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <defs>
+                <linearGradient id="half-grad" x1="0" x2="100%" y1="0" y2="0">
+                  <stop offset="50%" stop-color="currentColor"/>
+                  <stop offset="50%" stop-color="white"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#half-grad)" stroke="currentColor" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+          </div>
+        </div>   
+         <h3 class="text-gray-600 text-[1.1rem] pl-3">$75.00</h3>
+             </div>
+             <!-- Card 03 -->
+             <div class="card_1 h-[30rem] w-[17rem] ">
+                <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-3.jpg" alt="">
+                <div class="description p-2">
+                <h2 class="text-[1.1rem]">HRX Gray Trackpants</h2>
+                <div class="flex space-x-1 mt-1">
+                    <!-- Full Stars -->
+                    <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                    <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                    <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                    <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                  
+                    <!-- Half Star -->
+                    <svg class="w-5 h-6 text-orange-500 stroke-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <defs>
+                        <linearGradient id="half-grad" x1="0" x2="100%" y1="0" y2="0">
+                          <stop offset="50%" stop-color="currentColor"/>
+                          <stop offset="50%" stop-color="white"/>
+                        </linearGradient>
+                      </defs>
+                      <path fill="url(#half-grad)" stroke="currentColor" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                  </div>
+                </div>   
+                 <h3 class="text-gray-600 text-[1.1rem] pl-3">$45.00</h3>
+                  </div>
+          <!-- Card 04 -->
+          <div class="card_1 h-[30rem] w-[17rem] ">
+            <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-4.jpg" alt="">
+            <div class="description p-2">
+            <h2 class="text-[1.1rem]">Blue Printed T-Shirt</h2>
+            <div class="flex space-x-1 mt-1">
+                <!-- Filled Orange Star -->
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <!-- Repeat 3 more filled stars -->
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <!-- Empty Star with orange border -->
+                <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              </div>
+            </div>
+             <h3 class="text-gray-600 text-[1.1rem] pl-3">$55.00</h3>
+                 </div>
+          
+     </div>
+
+
+
+       <!-- Latest Products -->
+       <div class="feature_01 flex justify-center items-center w-[100%] h-[5rem] mt-[39rem] md:mt-[20rem] lg:mt-[0rem]  mb-[25rem] md:mb-[6rem] ">
+        <h2 class="text-[1.7rem] font-bold ">Late<span class="pb-[0.4rem] border-b-4 border-orange-600 ">st Pro</span>ducts</h2>
+       </div>
+       <div class="feature_02 px-[0rem] lg:px-[10rem]  h-[66rem] md:h-[45rem]  flex md:flex-wrap flex-col  md:flex-row justify-center items-center md:mt-[1rem] lg:mt-[0rem] gap-[1rem]">
+        <!-- Card 01 -->
+            <div class="card_1  h-[30rem] w-[17rem] mt-[140rem] md:mt-[0rem] ">
+   <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-11.jpg" alt="">
+   <div class="description p-2">
+   <h2 class="text-[1.1rem]">Puma Gray Sports Shoes</h2>
+   <div class="flex space-x-1 mt-1">
+       <!-- Filled Orange Star -->
+       <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+         <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+       </svg>
+     
+       <!-- Repeat 3 more filled stars -->
+       <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+         <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+       </svg>
+     
+       <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+         <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+       </svg>
+     
+       <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+         <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+       </svg>
+     
+       <!-- Empty Star with orange border -->
+       <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+         <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+       </svg>
+     </div>
+   </div>
+    <h3 class="text-gray-600 text-[1.1rem] pl-3">$95.00</h3>
+        </div>
+             <!-- Card 02 -->
+           <div class="card_1 h-[30rem] w-[17rem] ">
+       <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-6.jpg" alt="">
+       <div class="description p-2">
+       <h2 class="text-[1.1rem]">Printed T-Shirts </h2>
+       <div class="flex space-x-1 mt-1">
+           <!-- Full Stars -->
+           <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+             <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+           </svg>
+           <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+             <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+           </svg>
+           <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+             <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+           </svg>
+           <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+             <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+           </svg>
+         
+           <!-- Half Star -->
+           <svg class="w-5 h-6 text-orange-500 stroke-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+             <defs>
+               <linearGradient id="half-grad" x1="0" x2="100%" y1="0" y2="0">
+                 <stop offset="50%" stop-color="currentColor"/>
+                 <stop offset="50%" stop-color="white"/>
+               </linearGradient>
+             </defs>
+             <path fill="url(#half-grad)" stroke="currentColor" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+           </svg>
+         </div>
+       </div>   
+        <h3 class="text-gray-600 text-[1.1rem] pl-3">$75.00</h3>
+            </div>
+            <!-- Card 03 -->
+            <div class="card_1 h-[30rem] w-[17rem] ">
+               <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-7.jpg" alt="">
+               <div class="description p-2">
+               <h2 class="text-[1.1rem]">HRX Set of 3 Socks</h2>
+               <div class="flex space-x-1 mt-1">
+                   <!-- Full Stars -->
+                   <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                     <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                   </svg>
+                   <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                     <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                   </svg>
+                   <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                     <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                   </svg>
+                   <svg class="w-5 h-6 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                     <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                   </svg>
+                 
+                   <!-- Half Star -->
+                   <svg class="w-5 h-6 text-orange-500 stroke-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                     <defs>
+                       <linearGradient id="half-grad" x1="0" x2="100%" y1="0" y2="0">
+                         <stop offset="50%" stop-color="currentColor"/>
+                         <stop offset="50%" stop-color="white"/>
+                       </linearGradient>
+                     </defs>
+                     <path fill="url(#half-grad)" stroke="currentColor" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                   </svg>
+                 </div>
+               </div>   
+                <h3 class="text-gray-600 text-[1.1rem] pl-3">$30.00</h3>
+                 </div>
+         <!-- Card 04 -->
+         <div class="card_1 h-[30rem] w-[17rem] ">
+           <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-8.jpg" alt="">
+           <div class="description p-2">
+           <h2 class="text-[1.1rem]">Black Fossil Watch</h2>
+           <div class="flex space-x-1 mt-1">
+               <!-- Filled Orange Star -->
+               <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                 <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+               </svg>
+             
+               <!-- Repeat 3 more filled stars -->
+               <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                 <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+               </svg>
+             
+               <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                 <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+               </svg>
+             
+               <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                 <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+               </svg>
+             
+               <!-- Empty Star with orange border -->
+               <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                 <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+               </svg>
+             </div>
+           </div>
+            <h3 class="text-gray-600 text-[1.1rem] pl-3">$120.00</h3>
+                </div>
+                 <!-- Card 05 -->
+         <div class="card_1 h-[30rem] w-[17rem] ">
+            <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-9.jpg" alt="">
+            <div class="description p-2">
+            <h2 class="text-[1.1rem]">Black Sports Watch</h2>
+            <div class="flex space-x-1 mt-1">
+                <!-- Filled Orange Star -->
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <!-- Repeat 3 more filled stars -->
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <!-- Empty Star with orange border -->
+                <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              </div>
+            </div>
+             <h3 class="text-gray-600 text-[1.1rem] pl-3">$135.00</h3>
+                 </div>
+                 <!-- Card 06 -->
+                 <div class="card_1 h-[30rem] w-[17rem] ">
+                    <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-10.jpg" alt="">
+                    <div class="description p-2">
+                    <h2 class="text-[1.1rem]">Black HRX Shoes</h2>
+                    <div class="flex space-x-1 mt-1">
+                        <!-- Filled Orange Star -->
+                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                      
+                        <!-- Repeat 3 more filled stars -->
+                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                      
+                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                      
+                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                      
+                        <!-- Empty Star with orange border -->
+                        <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                          <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                      </div>
+                    </div>
+                     <h3 class="text-gray-600 text-[1.1rem] pl-3">$50.00</h3>
+                         </div>
+                         <!-- Card 07 -->
+                         <div class="card_1 h-[30rem] w-[17rem] ">
+                            <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-11.jpg" alt="">
+                            <div class="description p-2">
+                            <h2 class="text-[1.1rem]">Gray Nike Shoes</h2>
+                            <div class="flex space-x-1 mt-1">
+                                <!-- Filled Orange Star -->
+                                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                </svg>
+                              
+                                <!-- Repeat 3 more filled stars -->
+                                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                </svg>
+                              
+                                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                </svg>
+                              
+                                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                </svg>
+                              
+                                <!-- Empty Star with orange border -->
+                                <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                </svg>
+                              </div>
+                            </div>
+                             <h3 class="text-gray-600 text-[1.1rem] pl-3">$55.00</h3>
+                                 </div>
+                                 <!-- Card 08 -->
+                                 <div class="card_1 h-[30rem] w-[17rem]  ">
+                                    <img class="h-[24rem] w-[100%] object-center object-cover" src="/images/product-12.jpg" alt="">
+                                    <div class="description p-2">
+                                    <h2 class="text-[1.1rem]">HRX Black Trackpants</h2>
+                                    <div class="flex space-x-1 mt-1">
+                                        <!-- Filled Orange Star -->
+                                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                        </svg>
+                                      
+                                        <!-- Repeat 3 more filled stars -->
+                                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                        </svg>
+                                      
+                                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                        </svg>
+                                      
+                                        <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                        </svg>
+                                      
+                                        <!-- Empty Star with orange border -->
+                                        <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                     <h3 class="text-gray-600 text-[1.1rem] pl-3">$75.00</h3>
+                                         </div>
+       </div>
+
+          <!-- Smart Brand 04 -->
+<div class="smart w-[100%] mt-[165rem] md:mt-[85rem] lg:mt-[25rem] h-[50rem] md:h-[50rem] lg:h-[30rem]  bg-[url(/images/background.jpg)] flex flex-wrap md:gap-12 justify-center items-center bg-no-repeat bg-cover bg-center">
+    <div class="watch ">
+        <img class="h-[16rem] mt-[3rem] md:h-[22rem]" src="/images/exclusive.png" alt="">
+    </div>
+    <div class="text w-[35rem] h-[18rem] p-4 text-center lg:text-left">
+            <h2 class="text-[1.1rem]">Exclusively Available on RedStore</h2>
+            <h1 class="text-[2.5rem] font-bold">Smart Band 4</h1>
+            <p class="text-[0.9rem]">The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</p>
+            <button class="bg-orange-600 text-white py-1 mt-[1.2rem] px-6 rounded-full">
+                Buy Now <span class="ml-2"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+    </div>
+</div>
+
+<!-- Reviews Section -->
+ <div class="reviews p-12 md:px-[10rem] lg:p-0  h-[35rem] flex flex-wrap gap-6 justify-center items-center text-center">
+    <div class="no1 h-[28rem] md:h-[23rem] w-[24rem] border-2 border-orange-600 rounded-2xl px-[1.7rem]">
+        <span class="text-[2.5rem] text-orange-600 rotate-90">,,</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A corrupti accusamus consequuntur distinctio odit itaque, fugiat voluptatum similique? Ratione ducimus qui odit cum velit est eveniet inventore architecto dolores modi.</p>
+        <div class="flex space-x-1 mt-3 ml-[29%] md:ml-[32%]">
+            <!-- Filled Orange Star -->
+            <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+          
+            <!-- Repeat 3 more filled stars -->
+            <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+          
+            <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+          
+            <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+          
+            <!-- Empty Star with orange border -->
+            <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+              <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+            </svg>
+        </div>
+
+          <div class="img ml-[43%] mt-5">
+            <img class="rounded-full h-[3rem] " src="/images/user-1.png" alt="">
+        </div>
+        <h2 class="mt-2 font-bold">Sean Parker</h2>
+        </div>
+        <div class="no1 h-[26rem] md:h-[23rem] w-[24rem] border-2 border-orange-600 rounded-2xl px-[1.7rem]">
+            <span class="text-[2.5rem] text-orange-600 rotate-90">,,</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A corrupti accusamus consequuntur distinctio odit itaque, fugiat voluptatum similique? Ratione ducimus qui odit cum velit est eveniet inventore architecto dolores modi.</p>
+            <div class="flex space-x-1 mt-3  ml-[29%] md:ml-[32%]">
+                <!-- Filled Orange Star -->
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <!-- Repeat 3 more filled stars -->
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+              
+                <!-- Empty Star with orange border -->
+                <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                  <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                </svg>
+            </div>
+    
+              <div class="img ml-[43%] mt-5">
+                <img class="rounded-full h-[3rem] " src="/images/user-2.png" alt="">
+            </div>
+            <h2 class="mt-2 font-bold">Mike Smith</h2>
+            </div>
+            <div class="no1 h-[26rem] md:h-[23rem] w-[24rem] border-2 border-orange-600 rounded-2xl px-[1.7rem]">
+                <span class="text-[2.5rem] text-orange-600 rotate-90">,,</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A corrupti accusamus consequuntur distinctio odit itaque, fugiat voluptatum similique? Ratione ducimus qui odit cum velit est eveniet inventore architecto dolores modi.</p>
+                <div class="flex space-x-1 mt-3 ml-[29%] md:ml-[32%]">
+                    <!-- Filled Orange Star -->
+                    <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                  
+                    <!-- Repeat 3 more filled stars -->
+                    <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                  
+                    <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                  
+                    <svg class="w-5 h-5 text-orange-500 stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                  
+                    <!-- Empty Star with orange border -->
+                    <svg class="w-5 h-5 text-white stroke-orange-500" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24">
+                      <path fill="none" d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.172L12 18.896l-7.334 3.868 1.4-8.172L.132 9.21l8.2-1.192z"/>
+                    </svg>
+                </div>
+        
+                  <div class="img ml-[43%] mt-5">
+                    <img class="rounded-full h-[3rem] " src="/images/user-3.png" alt="">
+                </div>
+                <h2 class="mt-2 font-bold">Mabel Joe</h2>
+                </div>
+                 
+        
+    </div>
+ </div>
+
+
+    <!-- Companies name -->
+     <div class="companies flex flex-wrap gap-5 justify-center mt-[55rem] md:mt-[45rem] px-[5rem]  lg:mt-[0rem]  items-center">
+        <div class="company01 ">
+            <img class="" src="/images/logo-godrej.png" alt="">
+        </div>
+        <div class="company01 ">
+            <img class="" src="/images/logo-oppo.png" alt="">
+        </div>
+        <div class="company01 ">
+            <img class="" src="/images/logo-coca-cola.png" alt="">
+        </div>
+        <div class="company01 ">
+            <img class="" src="/images/logo-paypal.png" alt="">
+        </div>
+        <div class="company01 ">
+            <img class="" src="/images/logo-philips.png" alt="">
+        </div>
+     </div>
+       
+    <!-- Footer -->
+     <div class="footer h-[50rem]   text-center md:h-[25rem] mt-[8rem] w-[100%] bg-blue-950 flex flex-wrap justify-center gap-4 md:gap-[4rem] lg:gap-[7rem] items-center">
+      <div class="div1">
+        <h2 class="text-[1.3rem] text-white font-bold">Download Our App</h2>
+        <p class="text-gray-400 mt-[0.4rem]">Download App for Android and ios mobile phones.</p>
+       <div class="images flex flex-wrap gap-2 mt-[1.5rem]">
+        <div class="img1 ml-[3.2rem]">
+            <img class="h-[2.5rem]" src="/images/play-store.png" alt="">
+        </div>
+        <div class="img2">
+            <img class="h-[2.5rem]" src="/images/app-store.png" alt="">
+        </div>
+       </div>
+      </div>
+      <div class="div2 w-[30rem] flex flex-col items-center justify-center">
+        <img class="h-[3rem]" src="/images/logo-white.png" alt="">
+        <p class="text-center mt-4 px-[4rem] text-gray-400">Our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Money.</p>
+      </div>
+      <div class="div3 flex flex-col items-center justify-center">
+        <h2 class="text-white font-bold">Useful Links</h2>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Coupans</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Blog Post</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Return Policy</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Join Affliate</a>
+      </div>
+      <div class="div4 flex flex-col items-center ml-[5rem] md:ml-0 justify-center">
+        <h2 class="text-white font-bold">Follow Us</h2>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Twittor</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">Instagram</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:duration-300">YouTube</a>
+      </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+       
+</body>
+</html>
