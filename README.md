@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/2a188461-3768-4e3c-b81f-c9034a6e138c)
 
 
 
@@ -24,7 +25,8 @@ A fully responsive and modern **E-commerce website** built using **HTML**, **Tai
 - **HTML5** – Page Structure  
 - **Tailwind CSS** – Styling and Layout  
 - **JavaScript** – UI Interactions & DOM handling
-  
+  ![image](https://github.com/user-attachments/assets/622fe372-ab08-4130-9495-a6f3f689777c)
+
 
 ## 📂 Folder Structure
 
@@ -38,6 +40,9 @@ A fully responsive and modern **E-commerce website** built using **HTML**, **Tai
 │ ├── icons/
 ├── script.js
 └── README.md
+
+![image](https://github.com/user-attachments/assets/6f146e04-0599-477e-8c87-10d6b38b7a55)
+
 
 bash
 Copy
@@ -53,6 +58,7 @@ Edit
 
 
 
+
 ## 📌 How to Use
 
 1. Clone the repository:
@@ -61,6 +67,9 @@ Edit
 Open index.html in any browser to view the homepage.
 
 ⚠️ This is a frontend-only project. No backend or database is connected.
+
+![image](https://github.com/user-attachments/assets/9eced08e-40bf-455d-a606-9c3d09df7ae9)
+
 
 
 
@@ -71,6 +80,9 @@ Practice frontend layout and responsive design
 Improve Tailwind CSS skills
 
 Build real-world UI components
+
+![image](https://github.com/user-attachments/assets/ca2ee31d-3f17-4fd0-b6da-e85322304b41)
+
 
 Showcase for portfolio or resume
 
